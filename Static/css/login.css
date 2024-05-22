@@ -1,0 +1,50 @@
+    main {
+        padding: 1rem;
+    }
+
+    .form-signin {
+        max-width: 330px;
+        padding: 15px;
+        margin: auto;
+    }
+
+    .form-signin .form-floating {
+        position: relative;
+        margin-bottom: 1rem;
+    }
+
+    .form-signin .form-floating label {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0.375rem 0.75rem;
+        font-size: 1rem;
+        color: #495057;
+        pointer-events: none;
+        border: 1px solid transparent;
+        border-radius: 0.25rem;
+        transition: ease-in-out 0.2s;
+    }
+
+    .form-signin .form-floating input[type="email"],
+    .form-signin .form-floating input[type="password"] {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .form-signin .form-floating input:focus~label,
+    .form-signin .form-floating input:not(:placeholder-shown)~label {
+        top: -30px;
+        left: 0.75rem;
+        background-color: white;
+        z-index: 1;
+        padding: 0 0.25rem;
+    }
+
+    .form-signin .form-check {
+        text-align: left;
+    }
+
+    .form-signin button {
+        margin-top: 1rem;
+    }
