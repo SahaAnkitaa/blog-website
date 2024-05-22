@@ -1,1 +1,21 @@
+{
+  "params":
+  {
+    "local_server": "True",
+    "local_uri": "mysql://root:@localhost/techtrekker",
+    "prod_uri": "mysql://root:@localhost/techtrekker",
+    "fb_url": "facebook.com/techtrekker",
+    "tw_url": "twitter.com/techtrekker",
+    "gh_url": "https://github.com/techtrekker",
+    "blog_name": "Techtrekker",
+    "tagline": "Exploring the World of Technology",
+    "gmail-user": "saha.ankita0702@gmail.com",
+    "gmail-password": "fqhe pkqz lhbm buwn",
+    "about-text": "Welcome to <b>TechTrekker</b>, your ultimate destination for all things tech! TechTrekker is dedicated to providing you with the latest news, insights, and resources in the ever-evolving world of technology.\n\nAt TechTrekker, our mission is to empower tech enthusiasts, professionals, and learners alike with the knowledge and tools they need to thrive in the digital age.\n\nStay updated with the latest in tech news, trends, and innovations.\n\nHave a question, suggestion, or just want to say hello? We'd love to hear from you! Feel free to contact us or connect with us on social media to stay updated with the latest from TechTrekker.\n\nThank you for being a part of the TechTrekker community!",
+    "no_of_posts": 4,
+    "admin-user": "anie",
+    "admin-password": "aniepass2002@word",
+    "upload-location": "C:\\Users\\sahaa\\PycharmProjects\\blog-website\\Static\\assets\\img"
 
+  }
+}
