@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block content %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for('static', filename='assets/img/home-blog.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>Admin Panel</h1>
+                            <span class="subheading">Manage Your Posts</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+
+                    <div class="d-flex justify-content-between">
+                        <a href="/login" class="btn btn-outline-success back-button">
+                            <i class="fas fa-arrow-left"></i> Go To Dashboard
+                        </a>
+                        <a href="/logout"><button class="btn btn-success">Log Out</button></a>
+                    </div>
+                    <hr>
+
+                    <h1>Edit Post</h1>
+
+
+
+                    <form id="contactForm" action="{{post.sno}}" method="post">
+                        <div class="form-floating">
+                            <input class="form-control" id="title" type="text" placeholder="Enter The Title..." name="title" value="{{post.title}}" required />
+                            <label>Title</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="tline" type="text" placeholder="Enter The Tagline..." name="tline" value="{{post.tagline}}" required />
+                            <label>Tagline</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="slug" type="text" placeholder="Enter The Slug..." name="slug" value="{{post.slug}}" required />
+                            <label>Slug</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control" id="content" placeholder="Enter The Content Here..." name="content" style="height: 20rem" required>{{post.content}}</textarea>
+                            <label>Content</label>
+                        </div>
+                        <div class="form-floating">
+                            <input class="form-control" id="img_file" placeholder="Enter The Image Here..." name="img_file" style="height: 5rem" value="{{post.img_file}}" required></input>
+                            <label>Image File</label>
+                        </div>
+                        <br />
+                        <button class="btn btn-outline-success" id="submitButton" type="submit">Submit</button>
+                    </form>
+
+                    <!-- Divider-->
+                    <hr class="my-4" />
+
+
+                    <!-- Pager-->
+
+            </div>
+        </div>
+        </div>
+{% endblock %}
+{% block styles %}
+    <style>
+        .back-button {
+            display: inline-flex;
+            align-items: center;
+        }
+        .back-button i {
+            margin-right: 5px;
+        }
+        .d-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    </style>
+{% endblock %}
