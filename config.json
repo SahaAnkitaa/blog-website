@@ -3,7 +3,7 @@
   {
     "local_server": "True",
     "local_uri": "mysql://root:@localhost/techtrekker",
-    "prod_uri": "mysql://root:@localhost/techtrekker",
+    "prod_uri": "mysql://avnadmin:AVNS_spYtgLUvv0gznESY-bY@mysql-073ddf88-57ae-4722-a88e-b23b371f1aff-techtrek412596107-ch.g.aivencloud.com:10007/defaultdb",
     "fb_url": "facebook.com/techtrekker",
     "tw_url": "twitter.com/techtrekker",
     "gh_url": "https://github.com/techtrekker",
