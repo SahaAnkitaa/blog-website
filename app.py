@@ -10,7 +10,6 @@ import json
 with open("config.json", "r") as c:
     params = json.load(c)["params"]
 
-local_server = True
 app = Flask(__name__)
 app.secret_key = 'super-secret-key'
 app.config['UPLOAD_FOLDER'] = params['upload-location']
@@ -24,6 +23,9 @@ app.config.update(
 
 mail = Mail(app)
 
+
+# Determine if the app is running on a local server or in production
+local_server = params.get('local_server', 'True') == 'True'
 if local_server:
     app.config['SQLALCHEMY_DATABASE_URI'] = params['local_uri']
 else:
@@ -191,4 +193,5 @@ def post_route(post_slug):
     return render_template('post.html', params=params, post=post)
 
 
-app.run(host='0.0.0.0', debug=True)
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', debug=True)
